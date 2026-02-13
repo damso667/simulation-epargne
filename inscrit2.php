@@ -17,14 +17,14 @@ if (isset($_POST['valider'])) {
             echo  "photo n'a pas bien ete charger ";
         }
 
-        // 1️⃣ Enregistrer la simulation
+        // Enregistrer la simulation
         $stmt = $connec->prepare("INSERT INTO similitude (id_utilisateurs, montant_initial, dureee_moi, taux_interet, photo)
                               VALUES (?, ?, ?, ?, ?)");
         $stmt->execute([$id_utilisateur, $montant, $mois, $taux, $image]);
 
         $id_simulation = $connec->lastInsertId();
 
-        // 2️⃣ Enregistrer les calculs dans detail_simulation
+        //  Enregistrer les calculs dans detail_simulation
         $montant_courant = $montant;
         for ($i = 1; $i <= $mois; $i++) {
             $interet = ($montant_courant * $taux) / 100 / 12;
