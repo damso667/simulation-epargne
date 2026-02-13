@@ -3,130 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QALF</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
+    <title>QALF - Simulateur d'Épargne Intelligent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
- <header>
+    <!-- Menu Hamburger -->
+    <div class="box">
+        <div class="cont-lignes btn1">
+            <span class="lignes"></span>
+            <span class="lignes"></span>
+            <span class="lignes"></span>
+        </div>
+    </div>
 
-
-    <section class="debut">
-
-        <img src="image_maquette/logo.png" alt="" class="logo">
-        <div class="box">
-            <div class="cont-lignes btn1">
-               <div class="lignes"></div>
-               <div class="lignes"></div>
-               <div class="lignes"></div> 
-            </div>
-         </div>
-         <section class="section-hamburger">
-            <div class="burger">
-                <span class="hamburger-closed"></span>
-               <img src="image_maquette/logo.png" alt="">
-            </div>
-            <h3><a href="inscrit.php" class="lien1"> INSCRIVEZ-VOUS</a></h3>
-            <h3><a href="connecter.php" class="lien1">SE CONNECTER</a></h3>
-            <h3>DOCUMENTATION</h3>
-            <img src="image_maquette/2.png" alt="" class="insta">
-            <!-- <img src="image_maquette/3.png" alt="" class = "zapp"> -->
-         <img src="image_maquette/5.png" alt="" class="tiktok">
-         <hr>
-        </section>
-        <a href="connecter.php" class="lien">SE CONNECTER</a>
+    <!-- Section Navigation Hamburger -->
+    <section class="section-hamburger">
+        <div class="burger">
+            <img src="image_maquette/logo.png" alt="Logo QALF">
+        </div>
+        <nav>
+            <h3><a href="#" class="lien1">INSCRIVEZ-VOUS</a></h3>
+            <h3><a href="#" class="lien1">SE CONNECTER</a></h3>
+            <h3><a href="#" class="lien1">DOCUMENTATION</a></h3>
+        </nav>
+        <div class="social-links">
+            <img src="image_maquette/facebook.png" alt="Facebook">
+            <img src="image_maquette/twitter.png" alt="Twitter">
+            <img src="image_maquette/instagram.png" alt="Instagram">
+        </div>
     </section>
+
+    <!-- Section Hero -->
+    <section class="debut">
+        <header>
+            <img src="image_maquette/logo.png" alt="QALF Logo" class="logo">
+        </header>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Votre avenir financier commence ici</h1>
+            <p class="hero-subtitle">Simulez, planifiez et atteignez vos objectifs d'épargne avec intelligence</p>
+            <a href="#tarifs" class="lien">Commencer gratuitement</a>
+        </div>
+    </section>
+
+    <!-- Section Features -->
     <section class="corp">
         <div class="effet">
-        <h3>
-            <ul>
+            <h3>
                 <li>Q</li>
                 <li>A</li>
                 <li>L</li>
                 <li>F</li>
-            </ul>
+            </h3>
         </div>
-        </h3>
-        <div class="phrase">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facere laudantium aliquid vel id voluptates, in ipsa, quod non dolorem nobis quo illo tempora corrupti ea est voluptas. Voluptates animi beatae doloribus enim consequatur expedita exercitationem sed architecto consequuntur autem.</p>
-           <p class="phrase2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facere laudantium aliquid vel id voluptates, in ipsa, quod non dolorem nobis quo illo tempora corrupti ea est voluptas. Voluptates animi beatae doloribus enim consequatur expedita exercitationem sed architecto consequuntur autem. <a href="inscrit.php">inscrivez-vous</a>
-         </p>
 
-       </div>
-        <a href="inscrivez vous"></a>
-        <img src="image_maquette/2.png" alt="" class="insta">
-           <!-- <img src="image_maquette/3.png" alt="" class = "zapp"> -->
-        <img src="image_maquette/5.png" alt="" class="tiktok">
+        <div class="sapp">
+            <img src="image_maquette/icone1.png" alt="Simulation intelligente">
+            <p>
+                <strong>Simulation intelligente et personnalisée</strong><br>
+                Notre algorithme analyse votre situation financière et vos objectifs pour créer un plan d'épargne sur mesure. 
+                Visualisez l'évolution de votre capital sur 5, 10 ou 20 ans et ajustez vos paramètres en temps réel pour 
+                voir l'impact immédiat sur vos projections futures.
+            </p>
+        </div>
 
-       
+        <div class="zapp">
+            <p>
+                <strong>Objectifs multiples et flexibles</strong><br>
+                Que vous épargniez pour un achat immobilier, les études de vos enfants ou votre retraite, QALF vous permet 
+                de gérer plusieurs objectifs simultanément. Définissez des priorités, suivez vos progrès avec des tableaux 
+                de bord intuitifs et recevez des alertes pour rester sur la bonne voie.
+            </p>
+            <img src="image_maquette/icone2.png" alt="Objectifs multiples">
+        </div>
+
+        <div class="phrase2">
+            <a href="#">Découvrez toutes nos fonctionnalités →</a>
+        </div>
     </section>
+
+    <!-- Section Parallax -->
     <section class="parallax">
+        <h2 class="parallax-text">Rejoignez plus de 50 000 épargnants satisfaits</h2>
+        <p class="parallax-subtitle">Commencez votre simulation en moins de 2 minutes</p>
     </section>
 
+    <!-- Section Tarifs -->
     <section class="section-tarifs" id="tarifs">
-        <h3>Laissez-vous guider...</h3>
+        <h3>Choisissez votre formule</h3>
         <hr>
-    <div class="container-tarifs">
-    
-        <div class="cartes-tarifs">
-            <h4>Classique</h4>
-            <span>100€</span>
-            <p>✔️ Visite des châteaux</p>
-            <p>✔️ Visite de la ville</p>
-            <p>✔️ Spectacle folklorique</p>
-            <p>❌ Restaurant typique d'exception</p>
-            <p>❌ Visite culturelle sur plusieurs jours</p>
-            <p>❌ Accès privé à des lieux grandioses</p>
-    
-            <a href="#contact">Réservez un guide</a>
-    
+
+        <div class="container-tarifs">
+            <!-- Carte Classique -->
+            <article class="cartes-tarifs">
+                <div class="card-header">
+                    <h4>Essentiel</h4>
+                    <span>Gratuit</span>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>Simulation d'épargne basique</span>
+                    </li>
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>1 objectif d'épargne</span>
+                    </li>
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>Graphiques de projection</span>
+                    </li>
+                    <li class="feature-item unavailable">
+                        <span class="cross">✗</span>
+                        <span>Conseils personnalisés IA</span>
+                    </li>
+                    <li class="feature-item unavailable">
+                        <span class="cross">✗</span>
+                        <span>Objectifs illimités</span>
+                    </li>
+                    <li class="feature-item unavailable">
+                        <span class="cross">✗</span>
+                        <span>Support prioritaire</span>
+                    </li>
+                </ul>
+                <a href="#" class="btn-tarif">Commencer</a>
+            </article>
+
+            <!-- Carte Découverte -->
+            <article class="cartes-tarifs featured">
+                <div class="badge">Populaire</div>
+                <div class="card-header">
+                    <h4>Premium</h4>
+                    <span>9,90€<small>/mois</small></span>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>Simulation d'épargne avancée</span>
+                    </li>
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>3 objectifs d'épargne</span>
+                    </li>
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>Graphiques interactifs</span>
+                    </li>
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>Conseils personnalisés IA</span>
+                    </li>
+                    <li class="feature-item unavailable">
+                        <span class="cross">✗</span>
+                        <span>Objectifs illimités</span>
+                    </li>
+                    <li class="feature-item unavailable">
+                        <span class="cross">✗</span>
+                        <span>Support prioritaire</span>
+                    </li>
+                </ul>
+                <a href="#" class="btn-tarif">Choisir Premium</a>
+            </article>
+
+            <!-- Carte Exception -->
+            <article class="cartes-tarifs">
+                <div class="card-header">
+                    <h4>Expert</h4>
+                    <span>24,90€<small>/mois</small></span>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>Simulation complète multi-scénarios</span>
+                    </li>
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>Objectifs d'épargne illimités</span>
+                    </li>
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>Tableaux de bord avancés</span>
+                    </li>
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>IA expert financier dédié</span>
+                    </li>
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>Analyses fiscales et optimisation</span>
+                    </li>
+                    <li class="feature-item available">
+                        <span class="check">✓</span>
+                        <span>Support prioritaire 24/7</span>
+                    </li>
+                </ul>
+                <a href="#" class="btn-tarif">Choisir Expert</a>
+            </article>
         </div>
-    
-        <div class="cartes-tarifs">
-            <h4>Découverte</h4>
-            <span>250€</span>
-            <p>✔️ Visite des châteaux</p>
-            <p>✔️ Visite de la ville</p>
-            <p>✔️ Spectacle folklorique</p>
-            <p>✔️ Restaurant typique d'exception</p>
-            <p>❌ Visite culturelle sur plusieurs jours</p>
-            <p>❌ Accès privé à des lieux grandioses</p>
-    
-            <a href="#contact">Réservez un guide</a>
-    
-        </div>
-    
-    
-        <div class="cartes-tarifs">
-            <h4>Exception</h4>
-            <span>500€</span>
-            <p>✔️ Visite des châteaux</p>
-            <p>✔️ Visite de la ville</p>
-            <p>✔️ Spectacle folklorique</p>
-            <p>✔️ Restaurant typique d'exception</p>
-            <p>✔️ Visite culturelle sur plusieurs jours</p>
-            <p>✔️ Accès privé à des lieux grandioses</p>
-    
-            <a href="#contact">Réservez un guide</a>
-     
-        </div>
-    
-    
-    
-    </div>
-    
-    </section> 
+    </section>
+
+    <!-- Section CTA finale -->
+    <section class="final-cta">
+        <h2>Prêt à transformer votre épargne ?</h2>
+        <p>Commencez votre simulation gratuite dès aujourd'hui et découvrez votre potentiel d'épargne</p>
+        <a href="#" class="btn-cta-final">Créer mon compte gratuitement</a>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p class="bas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis veritatis molestias reiciendis distinctio sit, id, fugit similique mollitia quibusdam, quae aspernatur vero repellat consequatur rem ut pariatur saepe dolores eum. Repellendus harum amet a minus qui provident quis eligendi enim!</p>
-        <hr>
-        <h6>QALF intertement &copy;
-        <img src="image_maquette/2.png" alt="" class="insta">
-        <!-- <img src="image_maquette/3.png" alt="" class = "zapp"> -->
-     <img src="image_maquette/5.png" alt="" class="tiktok">
-    </h6>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>QALF</h4>
+                <p>Votre partenaire pour une épargne intelligente et maîtrisée</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens rapides</h4>
+                <a href="#">À propos</a>
+                <a href="#">Fonctionnalités</a>
+                <a href="#">Tarifs</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="footer-social">
+                    <img src="image_maquette/facebook.png" alt="Facebook">
+                    <img src="image_maquette/twitter.png" alt="Twitter">
+                    <img src="image_maquette/instagram.png" alt="Instagram">
+                </div>
+            </div>
+        </div>
+        <h6>© 2024 QALF Intelligence - Tous droits réservés | Mentions légales | Politique de confidentialité</h6>
     </footer>
 
- </header>
-<script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
