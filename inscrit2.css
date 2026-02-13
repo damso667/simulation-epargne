@@ -1,0 +1,81 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+ }
+  body{
+    background-color: #777;
+ }
+ .bloc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    background-image: url(image_maquette/Plan\ de\ travail\ 1.png);
+    background-size:auto;
+    width: 500px;
+    height: auto;
+    background-color: antiquewhite;
+    align-items: center;   
+    height: auto;
+    box-shadow: 0 12px 50px black;
+    padding: 50px;
+    border-radius: 13px;
+
+ }
+ .bloc label{
+    margin: 10px;
+    font-size: 20px;
+    color: #333; 
+    display: block;
+    margin-bottom: 0.5rem;  
+ }
+ .bloc h1{
+    margin: 15px;
+    color: #cfe2ff;
+    text-align: center;
+    font-size: 29px;
+ }
+ .bloc input{
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    outline: none;
+    opacity: 0.5;
+ }
+ .bloc button{
+    width: 108px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    align-items: center;
+    margin: 10px 45px;
+    border-radius: 13px;
+    background: #cfe2ff;
+    transform: translate(0px,40px);
+  }
+ ;
+ .bloc button:hover{
+   color:#cfe2ff ;
+   background-color: azure;
+ }
+ .bloc a{
+    text-decoration: none;
+    color: #777;
+    cursor: pointer;
+ }
+ .select{
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    outline: none;
+    opacity: 0.5;
+ }
+

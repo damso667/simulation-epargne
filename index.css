@@ -1,0 +1,440 @@
+    *, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        /* background: #affcff; */
+        /* position:relative; */
+        transform: translate(1120px,-250px);
+
+    }
+    .cont-lignes{
+       width: 60px;
+       height: 42px;
+       cursor: pointer;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%); 
+    }
+    .lignes{
+        width:100% ;
+        height: 6px;
+        border-radius: 5px;
+        background: #333;
+        position: absolute;
+        transition: all 0.2s ease-in-out;
+
+    }
+    .lignes:nth-child(1){
+       top: 0px; 
+    }
+    .lignes:nth-child(2){
+        top: 18px; 
+     }
+     .lignes:nth-child(3){
+        top: 36px; 
+     }
+     .btn1.active .lignes:nth-child(1){
+        top: 18px;
+        transform: rotate(135deg);
+     }
+     .btn1.active .lignes:nth-child(2){
+        opacity: 0;
+        transform: translate(-20px);
+     } 
+       .btn1.active .lignes:nth-child(3){
+        top: 18px;
+        transform: rotate(-135deg);
+     }
+
+    .debut{
+        width:100%;
+        height:100vh ;
+        min-height: 978px;
+        background-image: url(image_maquette/font.png);
+        background-image: center;
+        background-size: cover;
+        border-bottom:1px dotted #777 ;
+        padding-top:1px;
+    }
+    .logo{
+        width: 150px;
+    }
+    .lien{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    padding: 20px;
+    border-radius: 9999px;
+    background: rgb(103, 199, 228);
+    color: #333;
+    text-align: center;
+    font-size: 22px;
+    display: block;
+    width: 270px;
+    height: 78px;
+    line-height: 45px;
+    text-decoration: none;
+    margin:30px auto 0 ;
+    transition: all 0.2s ease-in-out ;
+    display: inline-block;
+
+    }
+    .lien:hover{
+        background-color: rgb(8, 195, 241);
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+    }
+    @media screen and (max-width:850px) {
+        .debut{
+            height: 650px;
+            min-height: auto;
+            background-position: right;
+
+        }
+        .debut a{
+            width: 150px; 
+            height:50px;
+            line-height: 17px;
+            font-size: 15px;
+            margin: -500px auto 0;
+            white-space: nowrap;
+            text-align: center;
+            transform: scale(0.4);
+            transform-origin: left center;
+            transform: translate(-50px , 0);
+
+        }
+        .logo{
+            width: 100px;
+        }
+    }
+    @media screen and (max-width:400px) {
+        .debut{
+            height: 550px;
+        }
+        .debut a{
+            width: 130px; 
+            height: 45px;
+            line-height: 45px;
+            font-size: 16px;
+        }
+         
+    }
+    .effet{
+        margin: 20px 20px 25px;
+    }
+    .corp h3 li{
+        color: rgb(8, 195, 241);
+        margin: 0;
+        list-style-type: none;
+        display: inline-block;
+        animation: flash 2s linear infinite;
+        letter-spacing: 2px;
+        font-weight: bold;
+    
+    }
+    @keyframes flash {
+        0%{
+            color: rgb(8, 195, 241);
+            text-shadow: none;
+        }
+        90%{
+            color:  rgb(8, 195, 241);
+            text-shadow: none;
+        }
+        100%{
+            color:rgb(8, 109, 241);
+            text-shadow: 0 0 7px #333 , 0 0 50px rgb(8, 195, 241) ;
+        }
+    }
+    .corp li:nth-child(1){
+        animation-delay: 0.1s;
+        }
+        .corp li:nth-child(2){
+            animation-delay: 0.2s;
+            }.corp li:nth-child(3){
+                animation-delay: 0.3s;
+                }.corp li:nth-child(4){
+                    animation-delay: 0.4s;
+                    }
+
+    .corp p{
+        width: 500px;
+        display: inline-block;
+        font-size: 16px;
+        text-align: justify;
+        margin: 0 0 0 25px ;
+    }
+    .phrase2{
+        transform: translate(200px);
+    }
+    .phrase2 a{
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(8, 195, 241);
+    }
+    .corp img{
+        width: 100px;
+        display: inline-block;
+        margin: 25px;
+    }
+    .sapp,
+    .zapp{
+        width: 900px;
+        display: inline-block;
+    }
+    .parallax{
+        width: 100%;
+        height: 300px;
+        background: url(image_maquette/paralax.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: center;
+        background-position: left;
+
+    }
+    @media screen and (max-width:850px) {
+        .phrase2 a{
+            text-decoration: none;
+            font-size: 13px;
+            color: rgb(8, 195, 241);
+        }
+        .corp h3 li{
+            color: rgb(8, 195, 241);
+            margin: 0;
+            list-style-type: none;
+            display: inline-block;
+            animation: flash 2s linear infinite;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 18px;
+            transform: translate(0,-300px);  
+        }
+        .corp p{
+
+            width: 450px;
+            display: block;
+            font-size: 10px;
+            text-align: justify;
+            margin: 15px ;
+            transform: translate(0,-300px);
+    
+        }
+        .corp img{
+            width: 70px;
+            display: inline-block;
+            margin: 15px;
+            transform: translate(0,-320px);
+        }
+        .parallax{
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            background: url(image_maquette/paralax.jpg);
+            background-position: center;
+            background-attachment: fixed;
+            /* display: flex;   */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: center;
+            background-position: -275px;
+            transform: translate(0,-300px);
+            background-attachment: fixed;
+        }
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: #333;
+        color: aliceblue;
+        text-align: justify;
+        padding: 15px;
+    }
+    footer h6{
+        font-size: 10px;
+        text-align: center;
+        align-items: center;
+    }
+    .section-tarifs{
+        padding-bottom: 150px;
+        border-bottom: 1px dashed #333;
+    
+      }
+      .section-tarifs h3{
+        text-align: center;
+        font-size: 45px;
+        margin: 120px 0 20px;
+        padding: 0 30px;
+      }
+      .section-tarifs hr{
+        width: 200px;
+        margin: 20px auto 100px;
+      }
+      .container-tarifs{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .cartes-tarifs{
+        width: 350px;
+        height: auto;
+        border-radius: 5px;
+        margin: 15px 15px;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgb(0, 0, 0,0.5) ;
+        transition: all 0.0s ease-in-out;
+        position: relative;
+      }
+      .cartes-tarifs:hover{
+        transform: translateY(-5px);
+      }
+      .cartes-tarifs h4{
+        text-align: center;
+        padding: 25px 20px;
+        font-size: 35px;
+        clip-path: polygon(0 0,100% 0%,100% 88%, 0 100% );
+        background: #affcff;
+      }
+      .cartes-tarifs span{
+        display: block;
+        text-align: center;
+        padding: 15px;
+        font-size: 25px;
+        font-weight: bold;
+    
+      }
+      .cartes-tarifs:nth-child(2) h4{
+        background: #50e5ff;
+      }
+      .cartes-tarifs:nth-child(3) h4{
+        background: #00a2ff;
+      }
+      .cartes-tarifs p{
+        font-size: 18px;
+        padding: 18px;
+        border-top: 1px solid rgb(164, 197, 194);
+      }
+      .cartes-tarifs p:last-of-type{
+        border-bottom: 1px solid rgb(164, 197, 194);;
+      }
+      .cartes-tarifs p:nth-child(odd){
+        background: rgb(236, 236, 229);
+      }
+      .cartes-tarifs a{
+        display: block;
+        text-decoration: none;
+        border: 1px solid #333;
+        text-align: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        border-radius: 9999px;
+        color: #333;
+        font-size: 18px;
+        margin: 20px auto;
+        line-height: 50px;
+        transition: all 0.2s ease-in-out;
+      }
+      .cartes-tarifs a:hover{
+        background: #333;
+        color: #f1f1f1;
+      }
+      @media screen and  (max-width:900px) {
+        .section-tarifs h3{
+          font-size: 30px;
+          margin: 80px 0 80px
+        }
+      }
+      @media screen and  (max-width:425px) {
+        .section-tarifs h3{
+          font-size: 20px;
+          padding: 0  10px;
+          margin: 50px 0;
+    
+        }
+        .section-tarifs hr{
+          width: 200px;
+          margin: 20px auto 20px;
+        }
+      }
+      footer img{
+        width: 30px;
+        display: inline-block;
+        padding: 8px;
+      }
+      .section-hamburger{
+        background-image: url();
+        background-color: ivory;
+        position:fixed;
+        width: 500px;
+        height:200vh ;
+        top: 0px;
+        left: 350px;
+        text-align: center;
+        transition: all 0.0s ease-out;
+        transform: translateY(-250vh); 
+      }
+      .section-hamburger.active{
+        transform: translateX(0);
+       
+    }
+    .burger{
+      background-image: url(image_maquette/buger-img.png);
+      height: 330PX;
+      width: 100%;
+      background-repeat: no-repeat;
+    }
+    .burger img{
+      width: 70px;
+      position: absolute;
+      transform: translate(-250px);
+    }
+    .section-hamburger h3{
+       color: #777;
+       margin: 35px;
+       cursor: pointer;
+       
+    }
+    .section-hamburger h3::after{
+      content: "" ;
+      display: block;
+      width:0px;
+      margin:5px auto 0 auto;
+      height: 2px;
+      border-radius:2px;
+      background: #777;
+      transition: width 0.2s ease-out 
+    }
+    .section-hamburger h3:hover{
+      color: #333;
+    }
+    .section-hamburger h3:hover::after{
+      width: 100%;
+      color: aliceblue;
+    }
+    .section-hamburger img{
+      width: 60px;
+      margin: 0 20px 0px;
+    }
+    .lien1{
+      text-decoration: none;
+      color: #777;
+    }
+    .lien1:hover{
+      color: #333 !important;
+      background-color: none !important;
+    }
+

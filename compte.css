@@ -1,0 +1,79 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    background-color: #1e1e2f;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+h3 {
+    font-size: 22px;
+    margin: 20px 0 15px;
+    color: #ffa500;
+}
+
+p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #ff4757;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+a:hover {
+    background-color: #e84118;
+}
+
+/* Boutons en haut à droite */
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-link {
+    padding: 8px 16px;
+    background: #00cec9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.button-link:hover {
+    background: #0984e3;
+}
