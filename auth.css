@@ -1,0 +1,311 @@
+/* ============================================
+   QALF — Auth Pages Shared Styles
+   ============================================ */
+
+body {
+  background: var(--bg-primary);
+  background-image:
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(8, 195, 241, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(240, 185, 11, 0.05) 0%,
+      transparent 50%
+    );
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-wrapper {
+  width: 100%;
+  max-width: 480px;
+  padding: var(--space-xl);
+}
+
+.auth-card {
+  padding: var(--space-2xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-blue),
+    var(--accent-gold),
+    var(--accent-purple)
+  );
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.auth-logo img {
+  height: 50px;
+  width: auto;
+  margin-bottom: var(--space-lg);
+  transition: transform var(--transition-base);
+}
+
+.auth-logo:hover img {
+  transform: scale(1.05);
+}
+
+.auth-header h1 {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  color: var(--text-primary);
+}
+
+.auth-header h1 i {
+  color: var(--accent-blue);
+  margin-right: var(--space-sm);
+  font-size: var(--font-size-xl);
+}
+
+.auth-header p {
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
+
+/* Toggle password button */
+.toggle-password {
+  position: absolute;
+  right: 14px;
+  top: 40px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+  font-size: var(--font-size-base);
+  transition: color var(--transition-fast);
+}
+
+.toggle-password:hover {
+  color: var(--accent-blue);
+}
+
+.btn-full {
+  width: 100%;
+  padding: 16px;
+  font-size: var(--font-size-base);
+  margin-top: var(--space-md);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--border-color);
+}
+
+.auth-footer p {
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-md);
+}
+
+.auth-footer a {
+  color: var(--accent-gold);
+  font-weight: 500;
+}
+
+.auth-footer a:hover {
+  color: var(--accent-gold-light);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--text-muted) !important;
+  transition: color var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--accent-blue) !important;
+}
+
+/* Step indicator */
+.steps-indicator {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--text-muted);
+}
+
+.step.active {
+  color: var(--accent-gold);
+}
+
+.step-number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+}
+
+.step.active .step-number {
+  background: linear-gradient(
+    135deg,
+    var(--accent-gold),
+    var(--accent-gold-light)
+  );
+  color: var(--bg-primary);
+  border-color: var(--accent-gold);
+}
+
+.step.completed .step-number {
+  background: var(--accent-green);
+  border-color: var(--accent-green);
+  color: #fff;
+}
+
+.step-line {
+  width: 40px;
+  height: 2px;
+  background: var(--border-color);
+  align-self: center;
+}
+
+.step-line.active {
+  background: var(--accent-gold);
+}
+
+/* Button row */
+.btn-row {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.btn-row .btn {
+  flex: 1;
+}
+
+/* Photo upload */
+.photo-upload {
+  margin-bottom: var(--space-lg);
+}
+
+.photo-upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  border: 2px dashed var(--border-light);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.photo-upload-area:hover {
+  border-color: var(--accent-blue);
+  background: rgba(8, 195, 241, 0.05);
+}
+
+.photo-upload-area i {
+  font-size: 32px;
+  color: var(--text-muted);
+}
+
+.photo-upload-area span {
+  color: var(--text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.photo-upload-area span strong {
+  color: var(--accent-blue);
+}
+
+.photo-preview {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: var(--radius-md);
+  display: none;
+  margin: 0 auto;
+  object-fit: cover;
+  border: 2px solid var(--border-light);
+}
+
+.photo-preview.visible {
+  display: block;
+}
+
+/* Select styling */
+.form-select {
+  width: 100%;
+  padding: 14px 16px;
+  padding-left: 44px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: all var(--transition-fast);
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2394a3b8' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+.form-select:focus {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 3px rgba(8, 195, 241, 0.1);
+}
+
+.form-select option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-wrapper {
+    padding: var(--space-md);
+  }
+  .auth-card {
+    padding: var(--space-xl);
+  }
+  .steps-indicator {
+    gap: var(--space-sm);
+  }
+  .step-line {
+    width: 20px;
+  }
+}

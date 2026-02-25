@@ -3,130 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QALF</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>QALF — Simulation d'Épargne</title>
+    <meta name="description" content="QALF - Plateforme de simulation d'épargne intelligente. Simulez vos investissements et visualisez votre croissance financière.">
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
- <header>
 
-
-    <section class="debut">
-
-        <img src="image_maquette/logo.png" alt="" class="logo">
-        <div class="box">
-            <div class="cont-lignes btn1">
-               <div class="lignes"></div>
-               <div class="lignes"></div>
-               <div class="lignes"></div> 
-            </div>
-         </div>
-         <section class="section-hamburger">
-            <div class="burger">
-                <span class="hamburger-closed"></span>
-               <img src="image_maquette/logo.png" alt="">
-            </div>
-            <h3><a href="inscrit.php" class="lien1"> INSCRIVEZ-VOUS</a></h3>
-            <h3><a href="connecter.php" class="lien1">SE CONNECTER</a></h3>
-            <h3>DOCUMENTATION</h3>
-            <img src="image_maquette/2.png" alt="" class="insta">
-            <!-- <img src="image_maquette/3.png" alt="" class = "zapp"> -->
-         <img src="image_maquette/5.png" alt="" class="tiktok">
-         <hr>
-        </section>
-        <a href="connecter.php" class="lien">SE CONNECTER</a>
-    </section>
-    <section class="corp">
-        <div class="effet">
-        <h3>
-            <ul>
-                <li>Q</li>
-                <li>A</li>
-                <li>L</li>
-                <li>F</li>
-            </ul>
+    <!-- ═══ LOADER ═══ -->
+    <div class="loader-overlay" id="pageLoader">
+        <div class="loader-spinner">
+            <div class="spinner-ring"></div>
+            <span class="loader-text">QALF</span>
         </div>
-        </h3>
-        <div class="phrase">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facere laudantium aliquid vel id voluptates, in ipsa, quod non dolorem nobis quo illo tempora corrupti ea est voluptas. Voluptates animi beatae doloribus enim consequatur expedita exercitationem sed architecto consequuntur autem.</p>
-           <p class="phrase2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facere laudantium aliquid vel id voluptates, in ipsa, quod non dolorem nobis quo illo tempora corrupti ea est voluptas. Voluptates animi beatae doloribus enim consequatur expedita exercitationem sed architecto consequuntur autem. <a href="inscrit.php">inscrivez-vous</a>
-         </p>
-
-       </div>
-        <a href="inscrivez vous"></a>
-        <img src="image_maquette/2.png" alt="" class="insta">
-           <!-- <img src="image_maquette/3.png" alt="" class = "zapp"> -->
-        <img src="image_maquette/5.png" alt="" class="tiktok">
-
-       
-    </section>
-    <section class="parallax">
-    </section>
-
-    <section class="section-tarifs" id="tarifs">
-        <h3>Laissez-vous guider...</h3>
-        <hr>
-    <div class="container-tarifs">
-    
-        <div class="cartes-tarifs">
-            <h4>Classique</h4>
-            <span>100€</span>
-            <p>✔️ Visite des châteaux</p>
-            <p>✔️ Visite de la ville</p>
-            <p>✔️ Spectacle folklorique</p>
-            <p>❌ Restaurant typique d'exception</p>
-            <p>❌ Visite culturelle sur plusieurs jours</p>
-            <p>❌ Accès privé à des lieux grandioses</p>
-    
-            <a href="#contact">Réservez un guide</a>
-    
-        </div>
-    
-        <div class="cartes-tarifs">
-            <h4>Découverte</h4>
-            <span>250€</span>
-            <p>✔️ Visite des châteaux</p>
-            <p>✔️ Visite de la ville</p>
-            <p>✔️ Spectacle folklorique</p>
-            <p>✔️ Restaurant typique d'exception</p>
-            <p>❌ Visite culturelle sur plusieurs jours</p>
-            <p>❌ Accès privé à des lieux grandioses</p>
-    
-            <a href="#contact">Réservez un guide</a>
-    
-        </div>
-    
-    
-        <div class="cartes-tarifs">
-            <h4>Exception</h4>
-            <span>500€</span>
-            <p>✔️ Visite des châteaux</p>
-            <p>✔️ Visite de la ville</p>
-            <p>✔️ Spectacle folklorique</p>
-            <p>✔️ Restaurant typique d'exception</p>
-            <p>✔️ Visite culturelle sur plusieurs jours</p>
-            <p>✔️ Accès privé à des lieux grandioses</p>
-    
-            <a href="#contact">Réservez un guide</a>
-     
-        </div>
-    
-    
-    
     </div>
-    
-    </section> 
-    <footer>
-        <p class="bas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis veritatis molestias reiciendis distinctio sit, id, fugit similique mollitia quibusdam, quae aspernatur vero repellat consequatur rem ut pariatur saepe dolores eum. Repellendus harum amet a minus qui provident quis eligendi enim!</p>
-        <hr>
-        <h6>QALF intertement &copy;
-        <img src="image_maquette/2.png" alt="" class="insta">
-        <!-- <img src="image_maquette/3.png" alt="" class = "zapp"> -->
-     <img src="image_maquette/5.png" alt="" class="tiktok">
-    </h6>
+
+    <!-- ═══ NAVBAR ═══ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="image_maquette/logo.png" alt="QALF Logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link">Accueil</a>
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#tarifs" class="nav-link">Offres</a>
+                <a href="inscrit.php" class="nav-link">Inscription</a>
+                <a href="connecte.php" class="btn btn-primary nav-cta">
+                    <i class="fas fa-sign-in-alt"></i> Connexion
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══ MOBILE MENU ═══ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <img src="image_maquette/logo.png" alt="QALF" class="mobile-logo">
+            <button class="mobile-close" id="mobileClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-bg" style="background-image: url('image_maquette/buger-img.png');"></div>
+        <div class="mobile-menu-links">
+            <a href="#hero" class="mobile-link"><i class="fas fa-home"></i> Accueil</a>
+            <a href="#about" class="mobile-link"><i class="fas fa-info-circle"></i> À propos</a>
+            <a href="#tarifs" class="mobile-link"><i class="fas fa-tags"></i> Offres</a>
+            <a href="inscrit.php" class="mobile-link"><i class="fas fa-user-plus"></i> Inscription</a>
+            <a href="connecte.php" class="mobile-link highlight"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+        </div>
+        <div class="mobile-menu-social">
+            <a href="#"><img src="image_maquette/2.png" alt="Instagram"></a>
+            <a href="#"><img src="image_maquette/5.png" alt="TikTok"></a>
+        </div>
+    </div>
+
+    <main>
+        <!-- ═══ HERO SECTION ═══ -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" style="background-image: url('image_maquette/font.png');"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-badge fade-in">
+                    <i class="fas fa-chart-line"></i> Simulation d'épargne
+                </div>
+                <h1 class="hero-title fade-in">
+                    <span class="letter-animate">Q</span><span class="letter-animate">A</span><span class="letter-animate">L</span><span class="letter-animate">F</span>
+                </h1>
+                <p class="hero-subtitle fade-in">
+                    Prenez le contrôle de votre avenir financier. Simulez vos placements, 
+                    visualisez votre croissance et faites les bons choix.
+                </p>
+                <div class="hero-actions fade-in">
+                    <a href="inscrit.php" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i> Commencer maintenant
+                    </a>
+                    <a href="#tarifs" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-eye"></i> Voir les offres
+                    </a>
+                </div>
+                <div class="hero-social fade-in">
+                    <a href="#" class="social-link"><img src="image_maquette/2.png" alt="Instagram"></a>
+                    <a href="#" class="social-link"><img src="image_maquette/5.png" alt="TikTok"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ ABOUT SECTION ═══ -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text slide-left">
+                        <h2 class="section-title">
+                            <span class="title-accent">Pourquoi</span> QALF ?
+                        </h2>
+                        <p>
+                            QALF est votre compagnon financier intelligent. Notre plateforme 
+                            vous permet de simuler vos placements avec précision, de calculer 
+                            vos intérêts mois par mois, et de visualiser l'évolution de 
+                            votre épargne en un instant.
+                        </p>
+                        <p>
+                            Que vous soyez débutant ou investisseur aguerri, 
+                            QALF vous offre les outils pour prendre des décisions éclairées
+                            et optimiser votre stratégie d'épargne.
+                        </p>
+                        <a href="inscrit.php" class="btn btn-accent">
+                            <i class="fas fa-user-plus"></i> Inscrivez-vous
+                        </a>
+                    </div>
+                    <div class="about-features slide-right">
+                        <div class="feature-card glass-card">
+                            <div class="feature-icon"><i class="fas fa-calculator"></i></div>
+                            <h3>Simulation précise</h3>
+                            <p>Calcul des intérêts composés mois par mois.</p>
+                        </div>
+                        <div class="feature-card glass-card">
+                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>100% Sécurisé</h3>
+                            <p>Vos données sont protégées et chiffrées.</p>
+                        </div>
+                        <div class="feature-card glass-card">
+                            <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                            <h3>Visualisation</h3>
+                            <p>Suivez l'évolution de votre épargne en détail.</p>
+                        </div>
+                        <div class="feature-card glass-card">
+                            <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                            <h3>Rapide</h3>
+                            <p>Résultats instantanés en quelques clics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ PARALLAX SECTION ═══ -->
+        <section class="parallax-section">
+            <div class="parallax-bg" style="background-image: url('image_maquette/paralax.jpg');"></div>
+            <div class="parallax-overlay"></div>
+            <div class="parallax-content fade-in">
+                <i class="fas fa-piggy-bank parallax-icon"></i>
+                <h2>Votre épargne grandit avec vous</h2>
+                <p>Des taux compétitifs et un suivi personnalisé</p>
+            </div>
+        </section>
+
+        <!-- ═══ PRICING SECTION ═══ -->
+        <section class="pricing" id="tarifs">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-badge"><i class="fas fa-gem"></i> Nos Offres</span>
+                    <h2 class="section-title">Laissez-vous guider...</h2>
+                    <p class="section-desc">Choisissez le plan qui correspond à vos ambitions</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Card 1 : Classique -->
+                    <div class="pricing-card glass-card scale-in">
+                        <div class="pricing-header tier-1">
+                            <span class="pricing-badge">Basique</span>
+                            <h3>Classique</h3>
+                            <div class="pricing-price">100000<span>fcfa</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="included"><i class="fas fa-check-circle"></i> Visite des châteaux</li>
+                            <li class="included"><i class="fas fa-check-circle"></i> Visite de la ville</li>
+                            <li class="included"><i class="fas fa-check-circle"></i> Spectacle folklorique</li>
+                            <li class="excluded"><i class="fas fa-times-circle"></i> Restaurant d'exception</li>
+                            <li class="excluded"><i class="fas fa-times-circle"></i> Visite sur plusieurs jours</li>
+                            <li class="excluded"><i class="fas fa-times-circle"></i> Accès privé exclusif</li>
+                        </ul>
+                        <a href="inscrit.php" class="btn btn-secondary pricing-btn">
+                            <i class="fas fa-arrow-right"></i> Réservez
+                        </a>
+                    </div>
+
+                    <!-- Card 2 : Découverte -->
+                    <div class="pricing-card glass-card popular scale-in">
+                        <div class="popular-tag"><i class="fas fa-star"></i> Populaire</div>
+                        <div class="pricing-header tier-2">
+                            <span class="pricing-badge">Recommandé</span>
+                            <h3>Découverte</h3>
+                            <div class="pricing-price">250000<span>fcfa</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="included"><i class="fas fa-check-circle"></i> Visite des châteaux</li>
+                            <li class="included"><i class="fas fa-check-circle"></i> Visite de la ville</li>
+                            <li class="included"><i class="fas fa-check-circle"></i> Spectacle folklorique</li>
+                            <li class="included"><i class="fas fa-check-circle"></i> Restaurant d'exception</li>
+                            <li class="excluded"><i class="fas fa-times-circle"></i> Visite sur plusieurs jours</li>
+                            <li class="excluded"><i class="fas fa-times-circle"></i> Accès privé exclusif</li>
+                        </ul>
+                        <a href="inscrit.php" class="btn btn-primary pricing-btn">
+                            <i class="fas fa-arrow-right"></i> Réservez
+                        </a>
+                    </div>
+
+                    <!-- Card 3 : Exception -->
+                    <div class="pricing-card glass-card scale-in">
+                        <div class="pricing-header tier-3">
+                            <span class="pricing-badge">Premium</span>
+                            <h3>Exception</h3>
+                            <div class="pricing-price">500000<span>fcfa</span></div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li class="included"><i class="fas fa-check-circle"></i> Visite des châteaux</li>
+                            <li class="included"><i class="fas fa-check-circle"></i> Visite de la ville</li>
+                            <li class="included"><i class="fas fa-check-circle"></i> Spectacle folklorique</li>
+                            <li class="included"><i class="fas fa-check-circle"></i> Restaurant d'exception</li>
+                            <li class="included"><i class="fas fa-check-circle"></i> Visite sur plusieurs jours</li>
+                            <li class="included"><i class="fas fa-check-circle"></i> Accès privé exclusif</li>
+                        </ul>
+                        <a href="inscrit.php" class="btn btn-accent pricing-btn">
+                            <i class="fas fa-crown"></i> Réservez
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="image_maquette/logo.png" alt="QALF" class="footer-logo">
+                    <p>Votre plateforme de simulation d'épargne intelligente. 
+                       Prenez le contrôle de votre avenir financier dès aujourd'hui.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="#hero"><i class="fas fa-chevron-right"></i> Accueil</a>
+                    <a href="#about"><i class="fas fa-chevron-right"></i> À propos</a>
+                    <a href="#tarifs"><i class="fas fa-chevron-right"></i> Offres</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Compte</h4>
+                    <a href="inscrit.php"><i class="fas fa-chevron-right"></i> Inscription</a>
+                    <a href="connecte.php"><i class="fas fa-chevron-right"></i> Connexion</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon-link"><img src="image_maquette/2.png" alt="Instagram"></a>
+                        <a href="#" class="social-icon-link"><img src="image_maquette/5.png" alt="TikTok"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 QALF International. Tous droits réservés.</p>
+            </div>
+        </div>
     </footer>
 
- </header>
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
